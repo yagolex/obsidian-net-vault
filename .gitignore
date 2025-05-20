@@ -1,0 +1,23 @@
+# Общее
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Обсидиан системные файлы
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/**/node_modules/
+.obsidian/plugins/**/dist/
+.obsidian/plugins/**/.obsidian*
+
+# Файлы резервных копий
+*.bak
+*.tmp
+*.swp
+*.swo
+~$*
+
+# Локальные заметки и черновики
+99_Templates/*
+98_Links_Index/*

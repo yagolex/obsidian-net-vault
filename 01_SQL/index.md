@@ -1,0 +1,18 @@
+# 📚 SQL Vault Index
+
+- [[batch-bulk-operations]]
+- [[constraints-check-default]]
+- [[cte-vs-temp-tables]]
+- [[execution-plan-indexes]]
+- [[group-by-aggregates]]
+- [[merge-audit]]
+- [[normalization-keys]]
+- [[partitioned-indexed]]
+- [[read-write-split]]
+- [[recursive-queries]]
+- [[returning-data]]
+- [[sql-debug-testing]]
+- [[sql-joins]]
+- [[subqueries]]
+- [[table-vars-temp-tables]]
+- [[transactions-isolation]]
