@@ -13,7 +13,7 @@
 
 ## 🔁 Practice and Review
 
-- [[topic-slug_bloom]]
-- [[topic-slug_quiz]]
+- [[topic-bloom]]
+- [[topic-quiz]]
 
 #sql #zettelkasten

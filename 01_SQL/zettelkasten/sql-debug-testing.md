@@ -16,9 +16,22 @@ BEGIN CATCH
 END CATCH;
 ```
 
-## Связанные темы:
-- [[execution-plan-indexes]]
+## Связанные темы
+- [[sql-joins]]
+- [[join-vs-union]]
+- [[group-by-aggregates]]
+- [[subqueries]]
+- [[merge-audit]]
+- [[transactions-isolation]]
+- [[normalization-keys]]
+- [[constraints-check-default]]
+- [[cte-vs-temp-tables]]
+- [[recursive-queries]]
+- [[execution-plan]]
+- [[query-optimization]]
+- [[partitioned-indexed]]
 - [[batch-bulk-operations]]
+- [[read-write-split]]
 
 ## 🔁 Практика и повторение
 - [[sql-debug-testing_bloom]]

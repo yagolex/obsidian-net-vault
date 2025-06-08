@@ -1,9 +1,11 @@
 # Подзапросы (Subqueries)
 
 Подзапрос — это SELECT внутри другого запроса. Бывает:
-- В SELECT: скалярный
-- В WHERE: фильтрация
-- В FROM: табличный
+## Типы:
+- Скалярные (`SELECT COUNT(*)`)
+- В списке (`WHERE x IN (SELECT ...)`)
+- Табличные (`FROM (SELECT ...) AS T`)
+
 
 ## Примеры:
 
@@ -13,7 +15,7 @@ SELECT Name, (SELECT MAX(Salary) FROM Salaries) AS MaxSalary
 FROM Employees;
 ```
 
-### В WHERE:
+### В WHERE (В списке):
 ```sql
 SELECT * FROM Products
 WHERE CategoryID IN (SELECT ID FROM Categories WHERE Name = 'Books');
@@ -22,6 +24,10 @@ WHERE CategoryID IN (SELECT ID FROM Categories WHERE Name = 'Books');
 ## Минусы:
 - Может быть менее производительным, чем JOIN
 - Может использоваться вместо CTE
+
+## Когда использовать:
+- Когда нельзя использовать JOIN
+- Для изоляции логики выборки
 
 ## Связанные темы:
 - [[cte-vs-temp-tables]]

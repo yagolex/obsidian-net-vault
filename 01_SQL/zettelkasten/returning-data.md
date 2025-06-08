@@ -26,7 +26,7 @@ OUTPUT deleted.Price AS OldPrice, inserted.Price AS NewPrice;
 
 ## Связанные темы:
 - [[merge-audit]]
-- [[execution-plan-indexes]]
+- [[execution-plan]]
 
 ## 🔁 Практика и повторение
 - [[returning-data_bloom]]

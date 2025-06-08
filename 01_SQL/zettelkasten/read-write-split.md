@@ -15,8 +15,21 @@
 - Реплика — только SELECT
 
 ## Связанные темы:
+- [[sql-joins]]
+- [[join-vs-union]]
+- [[group-by-aggregates]]
+- [[subqueries]]
+- [[merge-audit]]
+- [[transactions-isolation]]
+- [[normalization-keys]]
+- [[constraints-check-default]]
+- [[cte-vs-temp-tables]]
+- [[recursive-queries]]
+- [[execution-plan]]
+- [[query-optimization]]
+- [[partitioned-indexed]]
 - [[batch-bulk-operations]]
-- [[execution-plan-indexes]]
+- [[sql-debug-testing]]
 
 ## 🔁 Практика и повторение
 - [[read-write-split_bloom]]

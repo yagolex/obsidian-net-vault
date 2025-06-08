@@ -18,8 +18,22 @@ WITH SCHEMABINDING;
 CREATE UNIQUE CLUSTERED INDEX ix_v ON v(CategoryID);
 ```
 
-## Связанные темы:
-- [[execution-plan-indexes]]
+## Связанные темы
+- [[sql-joins]]
+- [[join-vs-union]]
+- [[group-by-aggregates]]
+- [[subqueries]]
+- [[merge-audit]]
+- [[transactions-isolation]]
+- [[normalization-keys]]
+- [[constraints-check-default]]
+- [[cte-vs-temp-tables]]
+- [[recursive-queries]]
+- [[execution-plan]]
+- [[query-optimization]]
+- [[batch-bulk-operations]]
+- [[read-write-split]]
+- [[sql-debug-testing]]
 
 ## 🔁 Практика и повторение
 - [[partitioned-indexed_bloom]]

@@ -1,4 +1,4 @@
-# MERGE и аудит
+# MERGE и аудит (OUTPUT)
 
 `MERGE` — мощная команда для объединения `INSERT`, `UPDATE` и `DELETE` в одном выражении.
 
@@ -15,9 +15,16 @@ WHEN NOT MATCHED THEN INSERT (ID, Value) VALUES (s.ID, s.Value)
 OUTPUT $action, inserted.*, deleted.*;
 ```
 
-## Аудит:
-- `$action`: возвращает 'INSERT', 'UPDATE' или 'DELETE'
+## Аудит (OUTPUT):
+
+- Позволяет логировать изменения
+- `$action` показывает тип действия: `INSERT`, `UPDATE`, `DELETE`
 - `OUTPUT`: фиксирует изменения
+
+## Использование:
+- Синхронизация данных
+- Логирование в таблицу аудита
+- Массовые обновления
 
 ## Связанные темы:
 - [[returning-data]]

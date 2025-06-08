@@ -18,9 +18,22 @@ FROM 'C:\data\products.csv'
 WITH (FIELDTERMINATOR = ',', ROWTERMINATOR = '\n');
 ```
 
-## Связанные темы:
-- [[execution-plan-indexes]]
+## Связанные темы
+- [[sql-joins]]
+- [[join-vs-union]]
+- [[group-by-aggregates]]
+- [[subqueries]]
+- [[merge-audit]]
+- [[transactions-isolation]]
+- [[normalization-keys]]
+- [[constraints-check-default]]
+- [[cte-vs-temp-tables]]
+- [[recursive-queries]]
+- [[execution-plan]]
+- [[query-optimization]]
+- [[partitioned-indexed]]
 - [[read-write-split]]
+- [[sql-debug-testing]]
 
 ## 🔁 Практика и повторение
 - [[batch-bulk-operations_bloom]]
