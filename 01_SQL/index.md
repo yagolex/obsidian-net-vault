@@ -11,7 +11,7 @@
 - [[group-by-aggregates]]
 
 ## 3. 🧱 Моделирование данных и ограничения
-- [[normalization-keys]]
+- [[normalization]]
 - [[constraints-check-default]]
 - [[partitioned-indexed]]
 
@@ -19,7 +19,7 @@
 - [[merge-audit]]
 
 ## 5. 🔁 Временные структуры и выражения
-- [[stored_procedures_and_functions]] Хранимые процедуры и пользовательские функции
+- [[stored_procedures_and_functions]]
 - [[cte-vs-temp-tables]]
 - [[recursive-queries]]
 - [[table-vars-vs-cursors]]
@@ -28,10 +28,11 @@
 ## 6. 🚀 Оптимизация и производительность
 - [[query-optimization]]
 - [[execution-plan]] 
+- [[pagination]]
 
 ## 7. 🔄 Транзакции и согласованность
 - [[transactions-isolation]]
-- [[read-write-split]]
+- [[read-write-db-split]]
 
 ## 8. 📤 Массовые операции
 - [[batch-bulk-operations]]

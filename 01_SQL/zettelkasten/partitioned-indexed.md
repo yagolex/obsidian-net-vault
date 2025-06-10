@@ -25,14 +25,14 @@ CREATE UNIQUE CLUSTERED INDEX ix_v ON v(CategoryID);
 - [[subqueries]]
 - [[merge-audit]]
 - [[transactions-isolation]]
-- [[normalization-keys]]
+- [[normalization]]
 - [[constraints-check-default]]
 - [[cte-vs-temp-tables]]
 - [[recursive-queries]]
 - [[execution-plan]]
 - [[query-optimization]]
 - [[batch-bulk-operations]]
-- [[read-write-split]]
+- [[read-write-db-split]]
 - [[sql-debug-testing]]
 
 ## 🔁 Практика и повторение

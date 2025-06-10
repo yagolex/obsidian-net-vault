@@ -85,6 +85,8 @@ CREATE TABLE ##GlobalData (
 ## Связанные темы:
 - [[cte-vs-temp-tables]]
 - [[execution-plan]]
+- [[user-variables]]
+- [[table-vars-vs-cursors]]
 
 ## 🔁 Практика и повторение
 - [[table-vars-temp-tables_bloom]]

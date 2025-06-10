@@ -25,14 +25,14 @@ WITH (FIELDTERMINATOR = ',', ROWTERMINATOR = '\n');
 - [[subqueries]]
 - [[merge-audit]]
 - [[transactions-isolation]]
-- [[normalization-keys]]
+- [[normalization]]
 - [[constraints-check-default]]
 - [[cte-vs-temp-tables]]
 - [[recursive-queries]]
 - [[execution-plan]]
 - [[query-optimization]]
 - [[partitioned-indexed]]
-- [[read-write-split]]
+- [[read-write-db-split]]
 - [[sql-debug-testing]]
 
 ## 🔁 Практика и повторение

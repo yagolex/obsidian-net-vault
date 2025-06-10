@@ -30,6 +30,7 @@ CREATE TABLE #RecentOrders (...);
 - [[table-vars-vs-temp-tables]]
 - [[recursive-queries]]
 - [[execution-plan]]
+- [[sql-indexes]]
 
 ## 🔁 Практика и повторение
 - [[cte-vs-temp-tables_bloom]]

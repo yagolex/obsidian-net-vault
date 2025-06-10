@@ -23,7 +23,7 @@ END CATCH;
 - [[subqueries]]
 - [[merge-audit]]
 - [[transactions-isolation]]
-- [[normalization-keys]]
+- [[normalization]]
 - [[constraints-check-default]]
 - [[cte-vs-temp-tables]]
 - [[recursive-queries]]
@@ -31,7 +31,7 @@ END CATCH;
 - [[query-optimization]]
 - [[partitioned-indexed]]
 - [[batch-bulk-operations]]
-- [[read-write-split]]
+- [[read-write-db-split]]
 
 ## 🔁 Практика и повторение
 - [[sql-debug-testing_bloom]]

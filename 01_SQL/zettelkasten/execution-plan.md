@@ -49,16 +49,14 @@
 | Отсутствующие индексы                | Используй **Missing Index Hints** или `sys.dm_db_missing_index_details` |
 ## 📦 Дополнительные инструменты
 
-- **SQL Server Execution Plan Viewer** (в SSMS встроен)
-    
-- **SQL Sentry Plan Explorer** (бесплатный инструмент с богатой аналитикой)
-    
-- `SET SHOWPLAN_XML ON` — возвращает план в XML-формате
-    
+- **SQL Server Execution Plan Viewer** (в SSMS встроен)    
+- **SQL Sentry Plan Explorer** (бесплатный инструмент с богатой аналитикой)    
+- `SET SHOWPLAN_XML ON` — возвращает план в XML-формате    
 - `SET STATISTICS PROFILE ON` — текстовое описание шагов
 
 ## Связанные темы:
 - [[query-optimization]]
+- [[sql-indexes]]
 - [[sql-joins]]
 - [[group-by-aggregates]]
 - [[batch-bulk-operations]]

@@ -23,7 +23,7 @@ ADD CONSTRAINT DF_Active DEFAULT 1 FOR IsActive;
 - FOREIGN KEY = связь с другой таблицей
 
 ## Связанные темы:
-- [[normalization-keys]]
+- [[normalization]]
 - [[merge-audit]]
 
 ## 🔁 Практика и повторение
