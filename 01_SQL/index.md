@@ -6,6 +6,7 @@
 - [[join-vs-union]]
 - [[subqueries]]
 - [[sql-indexes]]
+- [[primary-and-foreign-keys]]
 
 ## 2. 🧮 Агрегация, группировка и аналитика
 - [[group-by-aggregates]]
@@ -17,6 +18,8 @@
 
 ## 4. ⚙️ Вставка, обновление, удаление
 - [[merge-audit]]
+- [[identity-audit]]
+- [[keyword-output]]
 
 ## 5. 🔁 Временные структуры и выражения
 - [[stored_procedures_and_functions]]
