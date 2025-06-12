@@ -4,9 +4,10 @@
 - [[sql-joins]]
 - [[sql-many-to-many-joins]]
 - [[join-vs-union]]
-- [[subqueries]]
-- [[sql-indexes]]
+- [[subqueries]] 
 - [[primary-and-foreign-keys]]
+- [[table-definition-and-behavior]]
+- [[collation]]
 
 ## 2. 🧮 Агрегация, группировка и аналитика
 - [[group-by-aggregates]]
@@ -16,10 +17,11 @@
 - [[constraints-check-default]]
 - [[partitioned-indexed]]
 
-## 4. ⚙️ Вставка, обновление, удаление
+## 4. ⚙️ Вставка, обновление, удаление, аудит
 - [[merge-audit]]
 - [[identity-audit]]
 - [[keyword-output]]
+- [[temporal-tables]]
 
 ## 5. 🔁 Временные структуры и выражения
 - [[stored_procedures_and_functions]]
@@ -32,6 +34,7 @@
 - [[query-optimization]]
 - [[execution-plan]] 
 - [[pagination]]
+- [[sql-indexes]]
 
 ## 7. 🔄 Транзакции и согласованность
 - [[transactions-isolation]]
