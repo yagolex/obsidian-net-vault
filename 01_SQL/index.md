@@ -3,11 +3,12 @@
 ## 1. 🔗 Основы SQL и выборка данных
 - [[sql-joins]]
 - [[sql-many-to-many-joins]]
-- [[join-vs-union]]
-- [[subqueries]] 
-- [[primary-and-foreign-keys]]
+- [[join-vs-union]] 
 - [[table-definition-and-behavior]]
+- [[primary-and-foreign-keys]]
 - [[collation]]
+- [[subqueries]] 
+- [[recursive-queries]]
 
 ## 2. 🧮 Агрегация, группировка и аналитика
 - [[group-by-aggregates]]
@@ -25,8 +26,7 @@
 
 ## 5. 🔁 Временные структуры и выражения
 - [[stored_procedures_and_functions]]
-- [[cte-vs-temp-tables]]
-- [[recursive-queries]]
+- [[cte-vs-temp-tables]] 
 - [[table-vars-vs-cursors]]
 - [[table-vars-vs-temp-tables]]
 

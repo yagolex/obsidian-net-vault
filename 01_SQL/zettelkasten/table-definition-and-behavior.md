@@ -12,7 +12,7 @@ CREATE TABLE Users (
     LastName NVARCHAR(100) NOT NULL,
     Email NVARCHAR(255) UNIQUE,
     IsActive BIT DEFAULT 1,
-    CreatedAt DATETIME2 DEFAULT GETDATE()б
+    CreatedAt DATETIME2 DEFAULT GETDATE(),
     Age INT CHECK (Age >= 0),
     FullName as (FirstName + ' ' + LastName) PERSISTED,
     Comment NVARCHAR(100) SPARSE

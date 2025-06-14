@@ -95,6 +95,7 @@ ON UPDATE CASCADE
 - [[sql-indexes]]
 - [[sql-many-to-many-joins]]
 - [[constraints-check-default]]
+- [[table-definition-and-behavior]]
 
 
 #sql #zettelkasten
