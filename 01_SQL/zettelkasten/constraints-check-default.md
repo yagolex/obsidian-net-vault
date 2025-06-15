@@ -33,7 +33,7 @@ CREATE TABLE Users (
     FirstName NVARCHAR(100),
     LastName NVARCHAR(100),
     UNIQUE (FirstName, LastName), -- Unique value for fields combination
-    Email NVARCHAR(100) UNIQUE NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL, 
     Code NVARCHAR(20) UNIQUE -- NULL Allowed
 );
 ```
@@ -45,8 +45,8 @@ CREATE TABLE Users (
     ID INT,
     FirstName NVARCHAR(100),
     LastName NVARCHAR(100),
-    Email NVARCHAR(100) NOT NULL,
-    Code NVARCHAR(20)
+    Email NVARCHAR(100) NOT NULL, 
+    Code NVARCHAR(20) -- NULL Allowed
 );
 
 -- Добавление PRIMARY KEY
@@ -78,11 +78,12 @@ ADD CONSTRAINT UQ_Users_Code UNIQUE (Code);
 |Неявное имя|Да (`PK_Users_ID`)|Да (`UQ_Users_Email`)|
 |Использование как FK|✅ Часто|✅ Можно|
 |Часто комбинируется с|`IDENTITY`, `FOREIGN KEY`|`CHECK`, альтернативные ключи|
-
+Важно помнить, что в любом случае, при создании primary key или unique constrain создаётся уникальный индекс unique index.
 
 ## Связанные темы:
 - [[table-definition-and-behavior]]
 - [[primary-and-foreign-keys]]
+- [[sql-indexes]]
 
 ## 🔁 Практика и повторение
 - [[constraints-check-default_bloom]]
