@@ -1,10 +1,15 @@
+---
+aliases:
+  - Single Responsibility Principle
+"topic:": SOLID
+"subtopic:": SRP
+"level:": Understand
+"type:": concept
+"status:": ready
+"tags:": "#solid #oop #designprinciple"
+intention: борьба со сложностью
+---
 # SRP — Single Responsibility Principle
-topic:: SOLID
-subtopic:: SRP
-level:: Understand
-type:: concept
-status:: ready
-tags:: #solid #oop #designprinciple
 
 ## ⚡ Краткое
 Класс/модуль имеет только одну причину для изменения.

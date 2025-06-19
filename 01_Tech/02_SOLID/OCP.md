@@ -1,10 +1,15 @@
+---
+aliases:
+  - Open-Closed Principle
+"topic:": SOLID
+"subtopic:": OCP
+"level:": Understand
+"type:": term
+"status:": draft
+"tags:": "#solid #oop #designprinciple"
+intention: помогает в вопросах расширяемости и параллельной разработки
+---
 # OCP — Open-Closed Principle
-topic:: SOLID
-subtopic:: OCP
-level:: Understand
-type:: concept
-status:: ready
-tags:: #solid #oop #designprinciple
 
 ## ⚡ Краткое
 Открыт для расширения, закрыт для изменения.

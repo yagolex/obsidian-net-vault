@@ -1,5 +1,5 @@
 # Связанность (Cohesion)
-topic:: SOLID
+topic:: OOP
 subtopic:: Cohesion
 level:: Understand
 type:: term
