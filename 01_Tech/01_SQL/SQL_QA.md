@@ -1,0 +1,1 @@
+consider taking all the flashcards with questions down below into here with dynamic view

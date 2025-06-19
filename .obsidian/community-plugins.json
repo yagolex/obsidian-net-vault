@@ -1,3 +1,7 @@
 [
-  "dynamic-outline"
+  "dynamic-outline",
+  "obsidian-spaced-repetition",
+  "templater-obsidian",
+  "dataview",
+  "obsidian-textgenerator-plugin"
 ]
