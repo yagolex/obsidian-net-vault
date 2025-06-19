@@ -10,6 +10,7 @@ desktop.ini
 .obsidian/plugins/**/node_modules/
 .obsidian/plugins/**/dist/
 .obsidian/plugins/**/.obsidian*
+.obsidian/plugins/*/data.json
 
 # Файлы резервных копий
 *.bak
@@ -21,3 +22,4 @@ desktop.ini
 # Локальные заметки и черновики
 99_Templates/*
 98_Links_Index/*
+

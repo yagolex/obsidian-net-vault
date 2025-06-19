@@ -1,5 +1,5 @@
 # Внедрение зависимостей (Dependency Injection)
-topic:: SOLID
+topic:: OOP
 subtopic:: DependencyInjection
 level:: Understand
 type:: term
