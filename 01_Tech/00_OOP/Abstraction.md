@@ -1,5 +1,5 @@
 # Абстракция
-topic:: SOLID
+topic:: OOP
 subtopic:: Abstraction
 level:: Understand
 type:: term
