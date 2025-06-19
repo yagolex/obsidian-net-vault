@@ -10,7 +10,6 @@ desktop.ini
 .obsidian/plugins/**/node_modules/
 .obsidian/plugins/**/dist/
 .obsidian/plugins/**/.obsidian*
-.obsidian/plugins/*/data.json
 
 # Файлы резервных копий
 *.bak
