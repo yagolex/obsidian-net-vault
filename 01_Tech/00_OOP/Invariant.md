@@ -1,5 +1,5 @@
 # Инвариант
-topic:: SOLID
+topic:: OOP
 subtopic:: Invariant
 level:: Understand
 type:: term
