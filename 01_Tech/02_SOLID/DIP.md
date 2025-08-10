@@ -37,6 +37,7 @@ intention: минимизация зависимостей
 - [[01_Tech/00_OOP/Interface]]
 - [[01_Tech/00_OOP/Composition]]
 - [[01_Tech/00_OOP/Aggregation]]
+- [[Polymorphism]]
 
 ## 🔗 Ссылки на первоисточник
 https://sergeyteplyakov.blogspot.com/2014/09/the-dependency-inversion-principle.html

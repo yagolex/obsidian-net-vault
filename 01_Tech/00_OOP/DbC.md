@@ -2,6 +2,7 @@
 aliases:
   - Design by Contract
   - контрактное программирование
+  - DbC
 "topic:": OOP
 "subtopic:": DbC
 "level:": Understand

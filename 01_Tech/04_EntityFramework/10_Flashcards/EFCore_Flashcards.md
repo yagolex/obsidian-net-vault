@@ -1,0 +1,242 @@
+# EF Core Flashcards
+#tag: #flashcard
+
+Q: What is Entity Framework Core? <!--SR:!2025-08-10,4,230-->
+A: EF Core is an open-source, cross-platform ORM for .NET that maps .NET objects to database tables and handles data access.
+
+---
+
+Q: What is an ORM? <!--SR:!2025-08-10,4,230-->
+A: Object-Relational Mapper; it maps objects in code to relational database tables.
+
+---
+
+Q: What is the difference between EF Core and EF 6? <!--SR:!2025-08-10,4,230-->
+A: EF Core is cross-platform, lightweight, supports LINQ improvements, and some features like batch operations, but lacks some EF6 features like lazy loading proxies by default.
+
+---
+
+Q: What is DbContext? <!--SR:!2025-08-10,4,230-->
+A: A session with the database for querying and saving data; manages entity objects during runtime.
+
+---
+
+Q: How to configure a DbContext in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use `OnConfiguring` method or pass `DbContextOptions` via dependency injection.
+
+---
+
+Q: What is a Migration in EF Core? <!--SR:!2025-08-10,4,230-->
+A: A way to incrementally update the database schema from your model changes.
+
+---
+
+Q: Command to add a migration? <!--SR:!2025-08-10,4,230-->
+A: `dotnet ef migrations add MigrationName`
+
+---
+
+Q: Command to apply migrations? <!--SR:!2025-08-10,4,230-->
+A: `dotnet ef database update`
+
+---
+
+Q: What is Change Tracker? <!--SR:!2025-08-10,4,230-->
+A: Component in EF Core that keeps track of entity state changes for persistence.
+
+---
+
+Q: Entity states in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Added, Modified, Deleted, Unchanged, Detached.
+
+---
+
+Q: What is Lazy Loading? <!--SR:!2025-08-10,4,230-->
+A: Delayed loading of related entities upon first access, requires enabling proxies or manual loading.
+
+---
+
+Q: What is Eager Loading? <!--SR:!2025-08-10,4,230-->
+A: Loading related entities as part of the initial query using `Include()`.
+
+---
+
+Q: What is Explicit Loading? <!--SR:!2025-08-10,4,230-->
+A: Loading related data explicitly with `context.Entry(entity).Collection(...).Load()`.
+
+---
+
+Q: Difference between Include() and ThenInclude()? <!--SR:!2025-08-10,4,230-->
+A: `Include()` loads related entity; `ThenInclude()` loads related data from the included entity.
+
+---
+
+Q: How does AsNoTracking improve performance? <!--SR:!2025-08-10,4,230-->
+A: Disables Change Tracker, reducing overhead for read-only queries.
+
+---
+
+Q: What is Compiled Query? <!--SR:!2025-08-10,4,230-->
+A: A precompiled LINQ query to avoid translation cost for frequently executed queries.
+
+---
+
+Q: How to execute raw SQL in EF Core safely? <!--SR:!2025-08-10,4,230-->
+A: Use `FromSqlInterpolated` or parameterized queries to avoid SQL injection.
+
+---
+
+Q: How to handle transactions in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use `DbContext.Database.BeginTransaction()` or `TransactionScope`.
+
+---
+
+Q: What is Optimistic Concurrency? <!--SR:!2025-08-10,4,230-->
+A: Assumes multiple transactions can complete without affecting each other; detects conflicts at save time.
+
+---
+
+Q: What is Pessimistic Concurrency? <!--SR:!2025-08-10,4,230-->
+A: Locks data to prevent other transactions from modifying it until the lock is released.
+
+---
+
+Q: How to enable Lazy Loading in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Install `Microsoft.EntityFrameworkCore.Proxies` and enable it in `OnConfiguring` or DI.
+
+---
+
+Q: What is the N+1 problem? <!--SR:!2025-08-10,4,230-->
+A: A performance issue when each entity query triggers an additional query for related data.
+
+---
+
+Q: How to solve N+1 problem? <!--SR:!2025-08-10,4,230-->
+A: Use Eager Loading (`Include`) or projection.
+
+---
+
+Q: What are Value Conversions? <!--SR:!2025-08-10,4,230-->
+A: Convert property values when reading/writing to the database.
+
+---
+
+Q: What is Shadow Property? <!--SR:!2025-08-10,4,230-->
+A: A property not in the entity class but tracked by EF Core.
+
+---
+
+Q: How to configure relationships in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use Fluent API in `OnModelCreating` or data annotations.
+
+---
+
+Q: Difference between HasKey() and HasAlternateKey()? <!--SR:!2025-08-10,4,230-->
+A: `HasKey()` defines the primary key; `HasAlternateKey()` defines an alternate unique key.
+
+---
+
+Q: What is a Navigation Property? <!--SR:!2025-08-10,4,230-->
+A: A property on an entity that points to related entities.
+
+---
+
+Q: What is a Foreign Key? <!--SR:!2025-08-10,4,230-->
+A: A property that links one entity to another via a relationship.
+
+---
+
+Q: How to log generated SQL in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Configure logging with `ILoggerFactory` or `LogTo` in `OnConfiguring`.
+
+---
+
+Q: What is Database First vs Code First? <!--SR:!2025-08-10,4,230-->
+A: Database First: generate models from existing DB. Code First: define models in code, generate DB schema from them.
+
+---
+
+Q: How to seed initial data in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use `modelBuilder.Entity<>().HasData()` in `OnModelCreating`.
+
+---
+
+Q: What are Owned Entities? <!--SR:!2025-08-10,4,230-->
+A: Entities that do not have their own identity and are part of another entity.
+
+---
+
+Q: How to handle multiple DbContexts? <!--SR:!2025-08-10,4,230-->
+A: Configure each with its own options and connection string.
+
+---
+
+Q: Can EF Core work without a database? <!--SR:!2025-08-10,4,230-->
+A: Yes, using the InMemory provider for testing.
+
+---
+
+Q: What is Split Query in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Loads related collections with separate SQL queries instead of one big join.
+
+---
+
+Q: What is Single Query in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Loads related collections in a single SQL query (default before EF Core 5).
+
+---
+
+Q: How to detect performance issues in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use logging, profiling tools, and look for excessive queries or N+1 issues.
+
+---
+
+Q: How to execute stored procedures in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use `FromSqlRaw` or `ExecuteSqlRaw`.
+
+---
+
+Q: What is the purpose of ToListAsync()? <!--SR:!2025-08-10,4,230-->
+A: Executes query asynchronously and materializes the results into a list.
+
+---
+
+Q: How to disable Change Tracker for a specific query? <!--SR:!2025-08-10,4,230-->
+A: Use `AsNoTracking()`.
+
+---
+
+Q: What is a Compiled Model in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Pre-builds model metadata at compile-time to improve startup performance.
+
+---
+
+Q: How to roll back a transaction in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Call `transaction.Rollback()` on the transaction object.
+
+---
+
+Q: What is the difference between First() and FirstOrDefault()? <!--SR:!2025-08-10,4,230-->
+A: `First()` throws if no match; `FirstOrDefault()` returns default value.
+
+---
+
+Q: How to paginate results in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use `Skip()` and `Take()` with an ordered query.
+
+---
+
+Q: How to execute LINQ queries asynchronously in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Use async versions like `ToListAsync`, `FirstOrDefaultAsync`.
+
+---
+
+Q: How to set default values for a property in EF Core? <!--SR:!2025-08-10,4,230-->
+A: Configure via Fluent API or annotations with `HasDefaultValue`.
+
+---
+
+Q: What is the difference between Add() and Attach()? <!--SR:!2025-08-10,4,230-->
+A: `Add()` marks entity as Added, will be inserted; `Attach()` marks as Unchanged, only tracked.
+
+---
