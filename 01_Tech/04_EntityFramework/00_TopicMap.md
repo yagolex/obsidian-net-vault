@@ -3,7 +3,9 @@
 ## 1. Basics
 - [[01_Basics/WhatIsORM]]
 - [[01_Basics/DbContext]]
+- [[DbContext-lifecycle]]
 - [[01_Basics/ModelConfiguration]]
+- [[Interceptors]]
 
 ## 2. Migrations
 - [[02_Migrations/CreatingMigrations]]
@@ -12,11 +14,13 @@
 ## 3. Queries
 - [[03_Queries/LINQ]]
 - [[03_Queries/Include_ThenInclude]]
-- [[03_Queries/AsNoTracking]]
+- [[AsNoTracking]]
 
 ## 4. Performance
 - [[04_Performance/CompiledQueries]]
 - [[04_Performance/Caching]]
+- [[AsNoTracking]]
+- [[DbContext-pooling]]
 
 ## 5. Concurrency
 - [[05_Concurrency/OptimisticConcurrency]]
