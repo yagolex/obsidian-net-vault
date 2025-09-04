@@ -9,7 +9,7 @@
 
 ## 2. Migrations
 - [[02_Migrations/CreatingMigrations]]
-- [[02_Migrations/ApplyingInProduction]]
+- [[Migrations]]
 
 ## 3. Queries
 - [[03_Queries/LINQ]]
