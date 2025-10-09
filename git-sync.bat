@@ -1,18 +1,18 @@
 @echo off
 cd /d "%~dp0"
 
-echo === Обновление заметок из удалённого репозитория ===
+echo === update from repo ===
 git pull origin main
 
-echo === Добавление новых/изменённых файлов ===
+echo === adding new/updated files ===
 git add .
 
-echo === Коммитим изменения ===
+echo === commit changes ===
 set /p message=Введите сообщение коммита: 
 git commit -m "%message%"
 
-echo === Отправка на GitHub ===
+echo === Send to GitHub ===
 git push origin main
 
-echo === Готово ===
+echo === Done ===
 pause

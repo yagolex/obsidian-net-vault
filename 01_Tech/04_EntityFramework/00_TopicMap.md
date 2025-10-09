@@ -8,9 +8,7 @@
 - [[Interceptors]]
 
 ## 2. Migrations
-- [[02_Migrations/CreatingMigrations]]
 - [[Migrations]]
-
 ## 3. Queries
 - [[03_Queries/LINQ]]
 - [[03_Queries/Include_ThenInclude]]
@@ -23,8 +21,11 @@
 - [[DbContext-pooling]]
 
 ## 5. Concurrency
-- [[05_Concurrency/OptimisticConcurrency]]
-- [[05_Concurrency/PessimisticConcurrency]]
+- [[Optimistic_Concurrency]] 
+- [[Pessimistic_Concurrency]]
+- [[Transaction_Isolation]]
+- [[Isolation_vs_OptimisticConcurrency]]
+- [[OptimisticConcurrency_ETag]]
 
 ## 6. Transactions
 - [[06_Transactions/TransactionScope]]

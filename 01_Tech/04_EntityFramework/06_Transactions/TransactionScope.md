@@ -1,36 +1,38 @@
-# TransactionScope
+# TransactionScope in EF Core
+tags:: #efcore #transactions #TransactionScope
 
-## 🧠 Quick Recall (Trigger)
-> TBD — 1–3 sentences summarizing the key idea.
-
----
-
-## 📜 Interview-Ready Explanation
-TBD
+## 💡 Concept
+`TransactionScope` — это способ оборачивать несколько операций (в EF Core, ADO.NET, Dapper, и даже сторонние API) в одну логическую транзакцию.  
+При выходе из блока `using`, если не было ошибок — вызывается `Complete()`, и транзакция коммитится.
 
 ---
 
-## 💻 Code Examples
+## ⚙️ Пример использования
 ```csharp
-// TBD
+using var scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+
+await dbContext1.SaveChangesAsync();
+await dbContext2.SaveChangesAsync(); // можно другой контекст
+
+scope.Complete(); // фиксирует транзакцию
 ```
 
----
-
-## 🚨 Common Pitfalls
-- TBD
+Если `Complete()` не вызван, либо выброшено исключение — выполняется **rollback**.
 
 ---
 
-## 🛠 Real-World Case
-TBD
+## 🧩 Особенности
+- В .NET Core `TransactionScope` поддерживается с версии 2.1+.
+- Для асинхронных операций обязательно `TransactionScopeAsyncFlowOption.Enabled`.
+- Все соединения должны использовать **один и тот же connection string** и провайдер.
+- При работе с несколькими БД или разными серверами может использоваться **Distributed Transaction Coordinator (MSDTC)**.
 
 ---
 
-## 🃏 Flashcards (SR/Anki)
-Q: TBD
-A: TBD
+## ⚠️ Важно
+- В EF Core предпочтительно использовать `BeginTransaction()` для локальных транзакций.
+- `TransactionScope` хорош для оборачивания нескольких контекстов или разнородных API.
+- Для больших распределённых систем лучше использовать паттерны Outbox / Saga.
 
----
-
-**Tags:** #EFCore #06_Transactions #TransactionScope
+## 🃏 Связанные темы
+- [[BeginTransaction]]

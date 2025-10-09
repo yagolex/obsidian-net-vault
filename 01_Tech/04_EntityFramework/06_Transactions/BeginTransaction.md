@@ -1,36 +1,46 @@
-# BeginTransaction
+# BeginTransaction in EF Core
+tags:: #efcore #transactions #BeginTransaction
 
-## 🧠 Quick Recall (Trigger)
-> TBD — 1–3 sentences summarizing the key idea.
-
----
-
-## 📜 Interview-Ready Explanation
-TBD
+## 💡 Concept
+EF Core автоматически создаёт короткие транзакции при каждом `SaveChanges()`,  
+но иногда нужно управлять транзакцией вручную — например, при нескольких операциях, которые должны быть атомарны.
 
 ---
 
-## 💻 Code Examples
+## ⚙️ Пример
 ```csharp
-// TBD
+await using var tx = await context.Database.BeginTransactionAsync();
+
+var user = new User { Name = "Alex" };
+context.Users.Add(user);
+await context.SaveChangesAsync();
+
+var order = new Order { UserId = user.Id, Total = 100 };
+context.Orders.Add(order);
+await context.SaveChangesAsync();
+
+await tx.CommitAsync();
 ```
 
----
-
-## 🚨 Common Pitfalls
-- TBD
+Если произойдёт исключение, EF вызовет `Rollback()` автоматически при `Dispose()`.
 
 ---
 
-## 🛠 Real-World Case
-TBD
+## 🧠 Замечания
+- Можно откатить вручную: `await tx.RollbackAsync();`
+- Можно вложить несколько транзакций — EF Core поддерживает **savepoints**.
+- Транзакция блокирует ресурсы на уровне БД — не держите её дольше, чем нужно.
+- При работе с `TransactionScope` **не используйте BeginTransaction** одновременно.
 
 ---
 
-## 🃏 Flashcards (SR/Anki)
-Q: TBD
-A: TBD
+## ⚡ Пример с уровнем изоляции
+```csharp
+await using var tx = await context.Database.BeginTransactionAsync(IsolationLevel.RepeatableRead);
+// ... операции ...
+await tx.CommitAsync();
+```
 
----
-
-**Tags:** #EFCore #06_Transactions #BeginTransaction
+## 🃏 Связанные темы
+- [[TransactionScope]]
+- [[Transaction_Isolation]]
