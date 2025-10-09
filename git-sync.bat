@@ -8,7 +8,7 @@ echo === adding new/updated files ===
 git add .
 
 echo === commit changes ===
-set /p message=Введите сообщение коммита: 
+set /p message=Enter commit message: 
 git commit -m "%message%"
 
 echo === Send to GitHub ===
