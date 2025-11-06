@@ -86,3 +86,15 @@ LINQ queries in EF Core can be executed asynchronously using ==ToListAsync()== o
 Default values for a property can be set using ==HasDefaultValue()==.
 
 ==Add()== marks an entity as Added (to be inserted); ==Attach()== marks it as Unchanged (only tracked).
+
+In EF Core, ==AsSplitQuery()== executes multiple SQL queries instead of one large JOIN to load related data.
+
+EF Core supports three loading strategies: ==Eager Loading==, ==Lazy Loading==, and ==Explicit Loading==.
+
+A ==Projection== in EF Core selects specific fields or computed values instead of whole entities.
+
+If EF Core cannot translate a LINQ expression to SQL, it either performs ==Client Evaluation== or throws an ==InvalidOperationException==.
+
+==Eager Loading== loads related entities immediately, while ==Explicit Loading== requires manual `.Load()` calls.
+
+==AsSplitQuery()== can improve performance when complex Includes cause large JOIN results.

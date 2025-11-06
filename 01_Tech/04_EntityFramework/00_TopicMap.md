@@ -6,13 +6,18 @@
 - [[DbContext-lifecycle]]
 - [[01_Basics/ModelConfiguration]]
 - [[Interceptors]]
+- [[ModelConfiguration pipeline]]
 
 ## 2. Migrations
 - [[Migrations]]
-## 3. Queries
-- [[03_Queries/LINQ]]
-- [[03_Queries/Include_ThenInclude]]
+- [[Migrations_CheatSheet]]
+
+## 3. Queries- 
 - [[AsNoTracking]]
+- [[03_Queries/AsSplitQuery]]
+- [[03_Queries/Loading_Strategies]]
+- [[03_Queries/Projections]]
+- [[03_Queries/LINQ_Notes]]
 
 ## 4. Performance
 - [[04_Performance/CompiledQueries]]

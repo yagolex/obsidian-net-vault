@@ -15,6 +15,7 @@
 
 ## 2. 🧮 Агрегация, группировка и аналитика
 - [[group-by-aggregates]]
+- [[CROSS_JOIN_vs_CROSS_APPLY]]
 
 ## 3. 🧱 Моделирование данных и ограничения
 - [[normalization]]

@@ -192,3 +192,31 @@ A: Configure via Fluent API or annotations with `HasDefaultValue`.
 Q: What is the difference between Add() and Attach()? 
 ??
 A: `Add()` marks entity as Added, will be inserted; `Attach()` marks as Unchanged, only tracked.
+
+Q: What does AsSplitQuery() do in EF Core?
+??
+A: It splits a single complex query with multiple Includes into separate SQL queries, reducing duplication and memory load.
+
+Q: When should you use AsSplitQuery()?
+??
+A: When a single joined query causes performance issues due to Cartesian explosion of rows.
+
+Q: What are the main loading strategies in EF Core?
+??
+A: Eager, Lazy, and Explicit loading.
+
+Q: How does Explicit Loading differ from Lazy Loading?
+??
+A: Explicit Loading requires manual calls to `.Load()` methods; Lazy Loading happens automatically upon first property access.
+
+Q: What is a Projection in EF Core?
+??
+A: Selecting only specific properties or computed values with LINQ `Select`, often mapped into DTOs.
+
+Q: Why can some Select projections fail in EF Core?
+??
+A: Because not all .NET methods or expressions can be translated to SQL; EF may throw an exception or perform client evaluation.
+
+Q: What happens if EF Core cannot translate a part of a LINQ expression to SQL?
+??
+A: It either executes that part in memory (client evaluation) or throws an exception, depending on configuration.
